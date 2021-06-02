@@ -1,0 +1,31 @@
+#moduleBanner {
+  width: 100%;
+  max-width: 1400px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .banner-wrapper {
+    width: 100%;
+    height: 200px;
+    background: url('../imgs/strip-fullscreen.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+
+    @include respond-to-max(768) {
+      background: url('../imgs/strip-mediumscreen.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    @include respond-to-max(560) {        
+      background: url('../imgs/strip-mobile.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

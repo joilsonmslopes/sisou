@@ -1,0 +1,78 @@
+#moduleFeature-2 {
+  width: 100%;
+  max-width: 1400px;
+
+  padding: 60px;
+
+  @include respond-to-max(768) {
+    padding: 60px 40px;
+  }
+
+  @include respond-to-max(560) {
+    padding: 60px 30px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to-max(992) {
+      flex-direction: column;
+    }
+
+    .circle {
+      width: 100%;
+      max-width: 400px;
+      min-width: 250px;
+      @include respond-to-max(992) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+        max-width: 350px;
+
+        @include respond-to-max(768) {
+          max-width: 300;
+        }
+
+        @include respond-to-max(560) {
+          max-width: 275px;
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      max-width: 600px;
+
+      @include respond-to-max(992) {
+        margin-top: 40px;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        @include respond-to-max(992) {
+          text-align: center;
+        }
+
+        @include respond-to-max(768) {
+          font-size: 1.25rem;
+        }
+
+        @include respond-to-max(560) {
+          font-size: 1rem;
+        }
+      }
+    }
+    
+  }
+}

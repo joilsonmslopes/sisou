@@ -1,0 +1,11 @@
+@mixin respond-to-max($point) {
+  @media only screen and (max-width: $point+px){
+   @content;
+ }
+}
+
+@mixin respond-to-min($point) {
+  @media only screen and (min-width: $point+px){
+   @content;
+ }
+}

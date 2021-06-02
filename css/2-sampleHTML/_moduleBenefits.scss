@@ -1,0 +1,135 @@
+#moduleBenefits {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    text-align: center;
+
+    h2 {
+      font-size: 2.81rem;
+      line-height: 3.43rem;
+      font-weight: 700;
+      margin-top: 70px;
+
+      @include respond-to-max(768) {
+        font-size: 2.25rem;
+        line-height: 2.43rem;
+        padding: 0 5%;
+        margin-top: 50px;
+
+      }
+
+      @include respond-to-max(768) {
+        font-size: 1.75rem;
+        line-height: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 3.43rem;
+      font-weight: 400;
+
+      @include respond-to-max(768) {
+        font-size: 1.25rem;
+        line-height: 1.43rem;
+        padding: 15px 5% 0 5%;
+
+      }
+
+      @include respond-to-max(560) {
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+    }
+  }
+
+  .info-icon-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+
+    .wrapper-2 {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      .info-icon-single {
+        padding: 20px;
+        width: 100%;
+        max-width: 200px;
+  
+        img {
+          width: 100%;
+          max-width: 100px;
+        }
+  
+        h3 {
+          width: 100%;
+          max-width: 200px;
+          font-size: 1.15rem;
+          font-weight: 400;
+          margin: 25px auto 0 auto;
+          padding: 10px;
+  
+          span {
+            font-size: 1.15rem;
+            font-weight: 700;
+
+            @include respond-to-max(768) {
+              font-size: 1rem;
+            }
+          }
+
+          @include respond-to-max(768) {
+            font-size: 1rem;
+          }
+        }
+
+        @include respond-to-max(768) {
+          width: 100%;
+          max-width: 270px;
+        }
+      }
+
+      @include respond-to-max(768) {
+        flex-wrap: wrap; 
+      }
+    }
+
+    
+  }
+
+  a.btn-cta {
+    width: 100%;
+    max-width: 223px;
+    background-color: $pink;
+    color: white;
+    font-size: 1.25rem;
+    padding: 20px 24px;
+    font-weight: 600;
+
+    margin-top: 62px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+
+    @include respond-to-max(768) {
+      padding: 15px 19px;
+      font-size: 1rem;
+    }
+
+    @include respond-to-max(560) {
+    margin-top: 42px;
+    font-size: .9rem;
+    }
+  }
+}

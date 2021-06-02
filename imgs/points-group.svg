@@ -1,0 +1,26 @@
+<svg width="70" height="130" viewBox="0 0 70 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="70" width="10" height="10" rx="5" transform="rotate(90 70 0)" fill="black"/>
+<rect x="70" y="24" width="10" height="10" rx="5" transform="rotate(90 70 24)" fill="black"/>
+<rect x="70" y="48" width="10" height="10" rx="5" transform="rotate(90 70 48)" fill="black"/>
+<rect x="70" y="72" width="10" height="10" rx="5" transform="rotate(90 70 72)" fill="black"/>
+<rect x="70" y="96" width="10" height="10" rx="5" transform="rotate(90 70 96)" fill="black"/>
+<rect x="70" y="120" width="10" height="10" rx="5" transform="rotate(90 70 120)" fill="black"/>
+<rect x="50" width="10" height="10" rx="5" transform="rotate(90 50 0)" fill="black"/>
+<rect x="50" y="24" width="10" height="10" rx="5" transform="rotate(90 50 24)" fill="black"/>
+<rect x="50" y="48" width="10" height="10" rx="5" transform="rotate(90 50 48)" fill="black"/>
+<rect x="50" y="72" width="10" height="10" rx="5" transform="rotate(90 50 72)" fill="black"/>
+<rect x="50" y="96" width="10" height="10" rx="5" transform="rotate(90 50 96)" fill="black"/>
+<rect x="50" y="120" width="10" height="10" rx="5" transform="rotate(90 50 120)" fill="black"/>
+<rect x="30" width="10" height="10" rx="5" transform="rotate(90 30 0)" fill="black"/>
+<rect x="30" y="24" width="10" height="10" rx="5" transform="rotate(90 30 24)" fill="black"/>
+<rect x="30" y="48" width="10" height="10" rx="5" transform="rotate(90 30 48)" fill="black"/>
+<rect x="30" y="72" width="10" height="10" rx="5" transform="rotate(90 30 72)" fill="black"/>
+<rect x="30" y="96" width="10" height="10" rx="5" transform="rotate(90 30 96)" fill="black"/>
+<rect x="30" y="120" width="10" height="10" rx="5" transform="rotate(90 30 120)" fill="black"/>
+<rect x="10" width="10" height="10" rx="5" transform="rotate(90 10 0)" fill="black"/>
+<rect x="10" y="24" width="10" height="10" rx="5" transform="rotate(90 10 24)" fill="black"/>
+<rect x="10" y="48" width="10" height="10" rx="5" transform="rotate(90 10 48)" fill="black"/>
+<rect x="10" y="72" width="10" height="10" rx="5" transform="rotate(90 10 72)" fill="black"/>
+<rect x="10" y="96" width="10" height="10" rx="5" transform="rotate(90 10 96)" fill="black"/>
+<rect x="10" y="120" width="10" height="10" rx="5" transform="rotate(90 10 120)" fill="black"/>
+</svg>
