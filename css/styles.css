@@ -363,16 +363,14 @@ html {
 
 #moduleFeature {
   width: 100%;
-  max-width: 1400px;
-  padding: 60px;
-  margin: 60px auto 0px auto;
-  background-color: #F4F6FD;
-  position: relative;
 }
 
 #moduleFeature .container {
+  position: relative;
+  background-color: #F4F6FD;
+  padding: 60px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,28 +494,30 @@ html {
 
 #moduleFeature-1 {
   width: 100%;
+}
+
+#moduleFeature-1 .container {
+  width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
   padding: 60px;
   background-color: #000000;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
-  #moduleFeature-1 {
+  #moduleFeature-1 .container {
     padding: 60px 40px;
   }
 }
 
 @media only screen and (max-width: 560px) {
-  #moduleFeature-1 {
+  #moduleFeature-1 .container {
     padding: 60px 30px;
   }
 }
 
-#moduleFeature-1 .container {
-  width: 100%;
+#moduleFeature-1 .container .content {
   max-width: 800px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,6 +531,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 #moduleFeature-1 .container h2 {
@@ -597,9 +598,7 @@ html {
 
 #moduleFeature-2 {
   width: 100%;
-  max-width: 1400px;
   padding: 60px;
-  margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -616,6 +615,12 @@ html {
 
 #moduleFeature-2 .container {
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#moduleFeature-2 .container .moduleFeature-2-content {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   display: -webkit-box;
@@ -630,7 +635,7 @@ html {
 }
 
 @media only screen and (max-width: 992px) {
-  #moduleFeature-2 .container {
+  #moduleFeature-2 .container .moduleFeature-2-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

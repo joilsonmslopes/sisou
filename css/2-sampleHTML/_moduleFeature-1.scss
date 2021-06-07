@@ -1,29 +1,33 @@
 #moduleFeature-1 {
-
   width: 100%;
-  max-width: 1400px;
 
-  margin: 0 auto;
 
-  padding: 60px;
-  background-color: $black;
-
-  @include respond-to-max(768) {
-    padding: 60px 40px;
-  }
-
-  @include respond-to-max(560) {
-    padding: 60px 30px;
-  }
+  
 
   .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1400px;
+    padding: 60px;
+    background-color: $black;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    @include respond-to-max(768) {
+      padding: 60px 40px;
+    }
+  
+    @include respond-to-max(560) {
+      padding: 60px 30px;
+    }
+
+    .content {
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+
+    }
 
     h2 {
       color: $white;

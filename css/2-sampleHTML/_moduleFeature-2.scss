@@ -1,10 +1,7 @@
 #moduleFeature-2 {
   width: 100%;
-  max-width: 1400px;
 
   padding: 60px;
-
-  margin: 0 auto;
 
   @include respond-to-max(768) {
     padding: 60px 40px;
@@ -16,15 +13,21 @@
 
   .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   
+    .moduleFeature-2-content {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
 
-    @include respond-to-max(992) {
-      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include respond-to-max(992) {
+        flex-direction: column;
+      }
     }
 
     .circle {
