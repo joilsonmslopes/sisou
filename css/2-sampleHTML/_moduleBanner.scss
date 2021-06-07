@@ -7,30 +7,41 @@
 
   .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1920px;
     margin: 0 auto;
   }
 
-
-  .banner-wrapper {
+  img.fullscreen {
     width: 100%;
-    height: 200px;
-    background: url('../imgs/strip-fullscreen.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     
-    
-
     @include respond-to-max(768) {
-      background: url('../imgs/strip-mediumscreen.svg');
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-    }
-
-    @include respond-to-max(560) {        
-      background: url('../imgs/strip-mobile.svg');
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
+      display: none;
     }
   }
+  
+  img.mediumscreen {
+    display: none;
+    width: 100%;
+    max-width: 768px;
+
+    @include respond-to-max(768) {
+      display: block;
+    }
+
+    @include respond-to-max(560) {
+      display: none;
+    }
+    
+  }
+  
+  img.mobile {
+    display: none;
+    width: 100%;
+    max-width: 560px;
+
+    @include respond-to-max(560) {
+      display: block;
+    }
+  }
+
 }

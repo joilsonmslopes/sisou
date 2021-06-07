@@ -21,6 +21,8 @@ html {
 
 #moduleHeader {
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 #moduleHeader .container {
@@ -142,37 +144,53 @@ html {
 
 #moduleBanner .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
-#moduleBanner .banner-wrapper {
+#moduleBanner img.fullscreen {
   width: 100%;
-  height: 200px;
-  background: url("../imgs/strip-fullscreen.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 @media only screen and (max-width: 768px) {
-  #moduleBanner .banner-wrapper {
-    background: url("../imgs/strip-mediumscreen.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  #moduleBanner img.fullscreen {
+    display: none;
+  }
+}
+
+#moduleBanner img.mediumscreen {
+  display: none;
+  width: 100%;
+  max-width: 768px;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner img.mediumscreen {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 560px) {
-  #moduleBanner .banner-wrapper {
-    background: url("../imgs/strip-mobile.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  #moduleBanner img.mediumscreen {
+    display: none;
+  }
+}
+
+#moduleBanner img.mobile {
+  display: none;
+  width: 100%;
+  max-width: 560px;
+}
+
+@media only screen and (max-width: 560px) {
+  #moduleBanner img.mobile {
+    display: block;
   }
 }
 
 #moduleBenefits {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,11 +381,13 @@ html {
 
 #moduleFeature {
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #F4F6FD;
 }
 
 #moduleFeature .container {
   position: relative;
-  background-color: #F4F6FD;
   padding: 60px;
   width: 100%;
   max-width: 1400px;
@@ -494,13 +514,15 @@ html {
 
 #moduleFeature-1 {
   width: 100%;
+  max-width: 1920px;
+  background-color: #000000;
+  margin: 0 auto;
 }
 
 #moduleFeature-1 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   padding: 60px;
-  background-color: #000000;
   margin: 0 auto;
 }
 
@@ -615,7 +637,7 @@ html {
 
 #moduleFeature-2 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -716,7 +738,7 @@ html {
 
 #moduleFooter {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 60px auto 0px auto;
 }
 
