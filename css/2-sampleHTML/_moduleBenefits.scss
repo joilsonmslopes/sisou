@@ -1,11 +1,18 @@
 #moduleBenefits {
   width: 100%;
   max-width: 1400px;
+  margin: 60px auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
   .title {
     text-align: center;
@@ -67,9 +74,17 @@
         width: 100%;
         max-width: 200px;
   
-        img {
+        svg {
           width: 100%;
           max-width: 100px;
+          path {
+          transition: all 0.3s ease-in-out;
+
+          }
+
+        }
+        &:hover svg path {
+          fill: $pink;
         }
   
         h3 {
@@ -116,11 +131,20 @@
     font-size: 1.25rem;
     padding: 20px 24px;
     font-weight: 600;
+    border: 3px solid $pink;
 
     margin-top: 62px;
     border-radius: 50px;
     text-decoration: none;
     text-align: center;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      border: 3px solid $pink;
+      color: $pink;
+    }
 
     @include respond-to-max(768) {
       padding: 15px 19px;

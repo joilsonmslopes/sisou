@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1400px;
 
-  margin-top: 60px;
+  margin: 60px auto 0px auto;
   
   .container {
     width: 100%;
@@ -52,11 +52,26 @@
 
       a {
         text-decoration: none;
+
+        transition: all 0.2s ease-in-out;
+        transform: scale(0.9);
+
+        &:hover {
+          transform: scale(1);
+        }
       }
 
-      img {
+      svg {
         width: 100%;
-        max-width: 40px;
+        max-width: 100px;
+
+        path {
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover path {
+          fill: $pink;
+        }
       }
     }
   }

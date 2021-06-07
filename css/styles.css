@@ -21,7 +21,6 @@ html {
 
 #moduleHeader {
   width: 100%;
-  max-width: 1400px;
 }
 
 #moduleHeader .container {
@@ -100,9 +99,19 @@ html {
   color: white;
   font-size: 1.25rem;
   padding: 20px 24px;
+  border: 3px solid #EB01FF;
+  font-weight: 600;
   margin-top: 62px;
   border-radius: 50px;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#moduleHeader a.btn-cta:hover {
+  background-color: transparent;
+  border: 3px solid #EB01FF;
+  color: #EB01FF;
 }
 
 @media only screen and (max-width: 768px) {
@@ -120,7 +129,6 @@ html {
 
 #moduleBanner {
   width: 100%;
-  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +138,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#moduleBanner .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 #moduleBanner .banner-wrapper {
@@ -159,6 +173,7 @@ html {
 #moduleBenefits {
   width: 100%;
   max-width: 1400px;
+  margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +187,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#moduleBenefits .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 #moduleBenefits .title {
@@ -249,9 +270,18 @@ html {
   max-width: 200px;
 }
 
-#moduleBenefits .info-icon-wrapper .wrapper-2 .info-icon-single img {
+#moduleBenefits .info-icon-wrapper .wrapper-2 .info-icon-single svg {
   width: 100%;
   max-width: 100px;
+}
+
+#moduleBenefits .info-icon-wrapper .wrapper-2 .info-icon-single svg path {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#moduleBenefits .info-icon-wrapper .wrapper-2 .info-icon-single:hover svg path {
+  fill: #EB01FF;
 }
 
 #moduleBenefits .info-icon-wrapper .wrapper-2 .info-icon-single h3 {
@@ -302,10 +332,19 @@ html {
   font-size: 1.25rem;
   padding: 20px 24px;
   font-weight: 600;
+  border: 3px solid #EB01FF;
   margin-top: 62px;
   border-radius: 50px;
   text-decoration: none;
   text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#moduleBenefits a.btn-cta:hover {
+  background-color: transparent;
+  border: 3px solid #EB01FF;
+  color: #EB01FF;
 }
 
 @media only screen and (max-width: 768px) {
@@ -326,7 +365,7 @@ html {
   width: 100%;
   max-width: 1400px;
   padding: 60px;
-  margin-top: 60px;
+  margin: 60px auto 0px auto;
   background-color: #F4F6FD;
   position: relative;
 }
@@ -458,6 +497,7 @@ html {
 #moduleFeature-1 {
   width: 100%;
   max-width: 1400px;
+  margin: 0 auto;
   padding: 60px;
   background-color: #000000;
 }
@@ -527,10 +567,18 @@ html {
   font-size: 1.25rem;
   padding: 20px 24px;
   font-weight: 600;
+  border: 1px solid #EB01FF;
   margin-top: 40px;
   border-radius: 50px;
   text-decoration: none;
   text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#moduleFeature-1 .container a.btn-cta:hover {
+  background-color: rgba(235, 1, 255, 0.8);
+  border: 1px solid rgba(235, 1, 255, 0.8);
 }
 
 @media only screen and (max-width: 768px) {
@@ -551,6 +599,7 @@ html {
   width: 100%;
   max-width: 1400px;
   padding: 60px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -663,7 +712,7 @@ html {
 #moduleFooter {
   width: 100%;
   max-width: 1400px;
-  margin-top: 60px;
+  margin: 60px auto 0px auto;
 }
 
 #moduleFooter .container {
@@ -733,10 +782,28 @@ html {
 
 #moduleFooter .container .icons a {
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
-#moduleFooter .container .icons img {
+#moduleFooter .container .icons a:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#moduleFooter .container .icons svg {
   width: 100%;
-  max-width: 40px;
+  max-width: 100px;
+}
+
+#moduleFooter .container .icons svg path {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#moduleFooter .container .icons svg:hover path {
+  fill: #EB01FF;
 }
 /*# sourceMappingURL=styles.css.map */

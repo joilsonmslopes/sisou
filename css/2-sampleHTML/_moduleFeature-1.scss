@@ -3,6 +3,8 @@
   width: 100%;
   max-width: 1400px;
 
+  margin: 0 auto;
+
   padding: 60px;
   background-color: $black;
 
@@ -54,11 +56,18 @@
       font-size: 1.25rem;
       padding: 20px 24px;
       font-weight: 600;
+      border: 1px solid $pink;
   
       margin-top: 40px;
       border-radius: 50px;
       text-decoration: none;
       text-align: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: rgba(235, 1, 255, 0.8);
+        border: 1px solid rgba(235, 1, 255, 0.8);
+      }
   
       @include respond-to-max(768) {
         max-width: 304px;

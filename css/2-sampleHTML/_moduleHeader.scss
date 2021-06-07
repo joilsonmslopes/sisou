@@ -1,10 +1,10 @@
 #moduleHeader {
   width: 100%;
-  max-width: 1400px;
 
   .container {
     width: 100%;
     max-width: 1140px;
+
     margin: 0 auto;
 
     padding: 80px;
@@ -27,6 +27,7 @@
 
     img {
       max-width: 150px;
+      
     }
   }
 
@@ -64,10 +65,20 @@
     color: white;
     font-size: 1.25rem;
     padding: 20px 24px;
+    border: 3px solid $pink;
+    font-weight: 600;
+
 
     margin-top: 62px;
     border-radius: 50px;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      border: 3px solid $pink;
+      color: $pink;
+    }
 
     @include respond-to-max(768) {
       padding: 15px 19px;
